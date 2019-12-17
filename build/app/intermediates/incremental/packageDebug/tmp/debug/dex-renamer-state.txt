@@ -1,0 +1,4 @@
+#Tue Dec 17 05:05:41 IST 2019
+base.0=/home/azzam/Desktop/my_shop_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
