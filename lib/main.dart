@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
-// Mamually created packages
+// Manually created packages
 import 'package:my_shop_app/utils/horizontal_listview.dart';
+import 'package:my_shop_app/utils/products.dart';
 
 
 void main(){
@@ -152,10 +153,21 @@ class _HomePageState extends State<HomePage> {
 
           // *** PADDING WIDGET ***
           new Padding(padding: const EdgeInsets.all(8.0),
-          child: new Text('Categories'),),
+          child: new Text('Categories', style: new TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold),),),
 
           // *** HORIZONTAL LIST VIEW BEGINS HERE ***
+          HorizontalList(),
 
+          // *** PADDING WIDGET ***
+          new Padding(padding: const EdgeInsets.all(20.0),
+            child: new Text('Recent Products', style: new TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold),),
+          ),
+
+          // *** GRID VIEW ***
+          Container(
+            height: 320.0,
+            child: Products(),
+          )
 
         ],
       ),

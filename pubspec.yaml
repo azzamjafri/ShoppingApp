@@ -53,6 +53,17 @@ flutter:
     - images/w1.jpeg
     - images/w3.jpeg
     - images/w4.jpeg
+    - images/cats/Bakery.png
+    - images/cats/Beverages.png
+    - images/cats/Cleaning.png
+    - images/cats/foodgrains.png
+    - images/cats/Fruits.png
+    - images/cats/Oils.png
+    - images/cats/snacks.png
+    - images/products/blazer1.jpeg
+    - images/products/dress1.jpeg
+    - images/products/hills1.jpeg
+    - images/products/pants1.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
