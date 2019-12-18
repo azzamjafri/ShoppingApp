@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// MANUALLY CREATED PACKAGES
+import 'package:my_shop_app/pages/product_details.dart';
+
 class Products extends StatefulWidget {
   @override
   _ProductsState createState() => _ProductsState();
@@ -68,9 +71,20 @@ class Single_prod extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-        tag: product_name,
+        tag: new Text(product_name),
         child: Material(
-          child: InkWell(onTap: (){},
+          child: InkWell(onTap: ()=> Navigator.of(context).push(
+            new MaterialPageRoute(
+              builder: (context)=> new ProductDetails(
+                // *** Passing products details to the page ! ***
+                product_details_name: product_name,
+                product_details_new_price: product_price,
+                product_details_old_price: product_old_price,
+                product_details_picture: product_picture,
+
+              ),
+            )
+          ),
             child: GridTile(
               footer: Container(
                 color: Colors.white70,

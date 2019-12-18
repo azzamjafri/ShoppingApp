@@ -57,6 +57,9 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
 
+
+      // ================ DRAWER ============
+
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -106,8 +109,8 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: (){},
               child: ListTile(
-                title: Text('Categories'),
-                leading: Icon(Icons.dashboard, color: Colors.redAccent,),
+                title: Text('Shopping Cart'),
+                leading: Icon(Icons.shopping_cart, color: Colors.redAccent,),
               ),
             ),
 
